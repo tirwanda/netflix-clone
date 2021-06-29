@@ -1,0 +1,71 @@
+.featured {
+	height: 100vh;
+	position: relative;
+
+	.category {
+		position: absolute;
+		top: 80px;
+		left: 50px;
+		font-size: 1.25rem;
+		font-weight: 500;
+		color: white;
+		align-items: center;
+
+		select {
+			cursor: pointer;
+			background-color: var(--main-color);
+			border: 1px solid black;
+			color: white;
+			margin-left: 1.25rem;
+			padding: 5px;
+			border-radius: 5px;
+		}
+	}
+
+	.hero-image {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	&-info {
+		width: 35%;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		left: 50px;
+		bottom: 170px;
+		color: white;
+		font-weight: 300;
+
+		img {
+			width: 400px;
+		}
+
+		.desc {
+			margin: 1.25rem 0;
+		}
+
+		.buttons {
+			display: flex;
+
+			button {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 10px 20px;
+				border-radius: 7px;
+				border: none;
+				background-color: #e50914;
+				font-weight: 400;
+				margin-right: 1rem;
+				cursor: pointer;
+				color: var(--main-color);
+			}
+
+			span {
+				margin-left: 5px;
+			}
+		}
+	}
+}
