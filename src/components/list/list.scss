@@ -1,0 +1,44 @@
+.list {
+	width: 100%;
+	margin-top: 0.625rem;
+
+	&-title {
+		font-size: 1.25rem;
+		font-weight: 500;
+		margin-left: 3.125rem;
+	}
+
+	&-wrapper {
+		position: relative;
+		margin: 0 3.125rem;
+		margin-top: 1.25rem;
+
+		.slider {
+			position: absolute;
+			width: 3.125rem;
+			height: 100%;
+			background-color: rgb(15, 15, 15);
+			top: 0;
+			bottom: 0;
+			opacity: 0.5;
+			cursor: pointer;
+			z-index: 998;
+
+			&.left {
+				left: 0;
+			}
+
+			&.right {
+				right: 0;
+			}
+		}
+
+		.container {
+			margin: 0 3.125rem;
+			display: flex;
+			width: max-content;
+			transform: translateX(0px);
+			transition: all 0.8s ease-in-out;
+		}
+	}
+}
