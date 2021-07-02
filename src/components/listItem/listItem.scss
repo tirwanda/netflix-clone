@@ -2,7 +2,7 @@
 	width: 225px;
 	height: 120px;
 	background-color: var(--main-color);
-	color: black;
+	color: white;
 	margin-right: 5px;
 	overflow: hidden;
 
@@ -10,5 +10,74 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+	}
+
+	iframe {
+		width: 100%;
+		height: 140px;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-radius: 5px;
+	}
+
+	&:hover {
+		position: absolute;
+		top: -150px;
+		width: 325px;
+		height: 300px;
+		box-shadow: 0px 0px 13px 0px rgba(255, 255, 255, 0.23);
+		-webkit-box-shadow: 0px 0px 13px 0px rgba(255, 255, 255, 0.23);
+		-moz-box-shadow: 0px 0px 13px 0px rgba(255, 255, 255, 0.23);
+
+		img {
+			height: 140px;
+		}
+	}
+
+	&-info {
+		display: flex;
+		flex-direction: column;
+		padding: 5px;
+
+		.icons {
+			display: flex;
+			margin-bottom: 10px;
+
+			.icon {
+				margin-right: 10px;
+				cursor: pointer;
+				border: 2px solid white;
+				border-radius: 50%;
+				padding: 5px;
+				font-size: 1rem;
+			}
+		}
+
+		.info-top {
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+			font-size: 1rem;
+			font-weight: 600;
+			color: grey;
+
+			.limit {
+				border: 1px solid gray;
+				pad: 1px 3px;
+				margin: 0 10px;
+			}
+		}
+
+		.desc {
+			font-size: 13px;
+			margin-bottom: 10px;
+		}
+
+		.genre {
+			font-size: 14px;
+			color: lightgray;
+		}
 	}
 }
